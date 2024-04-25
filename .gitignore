@@ -1,0 +1,10 @@
+coverage/
+node_modules/
+*.d.ts.map
+*.d.ts
+*.log
+.DS_Store
+yarn.lock
+
+!/index.d.ts
+!/test/fixture/manual/index.d.ts

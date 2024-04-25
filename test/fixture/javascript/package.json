@@ -1,0 +1,8 @@
+{
+  "xo": {
+    "prettier": true,
+    "rules": {
+      "@typescript-eslint/prefer-nullish-coalescing": "off"
+    }
+  }
+}

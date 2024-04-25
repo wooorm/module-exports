@@ -1,0 +1,15 @@
+{
+  "name": "collapse-white-space",
+  "version": "0.0.0",
+  "type": "module",
+  "main": "index.js",
+  "files": [
+    "lib/",
+    "index.d.ts.map",
+    "index.d.ts",
+    "index.js"
+  ],
+  "xo": {
+    "prettier": true
+  }
+}

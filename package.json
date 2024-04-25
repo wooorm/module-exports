@@ -1,0 +1,129 @@
+{
+  "name": "module-exports",
+  "version": "0.0.0",
+  "description": "Get the exports of a module",
+  "license": "MIT",
+  "keywords": [
+    "api",
+    "exports",
+    "file",
+    "module",
+    "node",
+    "npm"
+  ],
+  "repository": "wooorm/module-exports",
+  "bugs": "https://github.com/wooorm/module-exports/issues",
+  "funding": {
+    "type": "github",
+    "url": "https://github.com/sponsors/wooorm"
+  },
+  "author": "Titus Wormer <tituswormer@gmail.com> (https://wooorm.com)",
+  "contributors": [
+    "Titus Wormer <tituswormer@gmail.com> (https://wooorm.com)"
+  ],
+  "type": "module",
+  "exports": "./index.js",
+  "files": [
+    "lib/",
+    "index.d.ts.map",
+    "index.d.ts",
+    "index.js"
+  ],
+  "dependencies": {
+    "@types/mdast": "^4.0.0",
+    "@types/unist": "^3.0.0",
+    "devlop": "^1.0.0",
+    "estree-util-is-identifier-name": "^3.0.0",
+    "mdast-util-from-markdown": "^2.0.0",
+    "mdast-util-gfm": "^3.0.0",
+    "micromark-extension-gfm": "^3.0.0",
+    "pluralize": "^8.0.0",
+    "prettier": "^3.0.0",
+    "typescript": "^5.0.0",
+    "vfile-message": "^4.0.0",
+    "vfile-sort": "^4.0.0"
+  },
+  "devDependencies": {
+    "c8": "^9.0.0",
+    "prettier": "^3.0.0",
+    "remark-cli": "^12.0.0",
+    "remark-preset-wooorm": "^10.0.0",
+    "type-coverage": "^2.0.0",
+    "typescript": "^5.0.0",
+    "xo": "^0.58.0"
+  },
+  "scripts": {
+    "build": "tsc --build --clean && tsc --build && type-coverage",
+    "prepack": "npm run build && npm run format",
+    "format": "remark . --frail --output --quiet && prettier . --log-level warn --write && xo --fix",
+    "test": "npm run build && npm run format && npm run test-coverage",
+    "test-api": "node --conditions development test/index.js",
+    "test-coverage": "c8 --100 --reporter lcov npm run test-api"
+  },
+  "prettier": {
+    "bracketSpacing": false,
+    "semi": false,
+    "singleQuote": true,
+    "tabWidth": 2,
+    "trailingComma": "none",
+    "useTabs": false
+  },
+  "remarkConfig": {
+    "plugins": [
+      "remark-preset-wooorm"
+    ]
+  },
+  "typeCoverage": {
+    "atLeast": 100,
+    "detail": true,
+    "ignoreCatch": true,
+    "strict": true
+  },
+  "xo": {
+    "overrides": [
+      {
+        "files": [
+          "**/*.d.ts"
+        ],
+        "rules": {
+          "@typescript-eslint/array-type": [
+            "error",
+            {
+              "default": "generic"
+            }
+          ],
+          "@typescript-eslint/ban-types": [
+            "error",
+            {
+              "types": {
+                "Symbol": false
+              },
+              "extendDefaults": true
+            }
+          ],
+          "@typescript-eslint/consistent-type-definitions": [
+            "error",
+            "interface"
+          ]
+        }
+      }
+    ],
+    "prettier": true,
+    "rules": {
+      "logical-assignment-operators": "off",
+      "max-depth": "off",
+      "no-bitwise": "off",
+      "unicorn/prefer-at": "off",
+      "unicorn/prevent-abbreviations": [
+        "error",
+        {
+          "allowList": {
+            "jsDocParameter": true,
+            "jsDocParameters": true,
+            "jsDocs": true
+          }
+        }
+      ]
+    }
+  }
+}

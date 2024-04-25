@@ -1,0 +1,9 @@
+{
+  "xo": {
+    "prettier": true,
+    "rules": {
+      "@typescript-eslint/prefer-nullish-coalescing": "off",
+      "import/newline-after-import": "off"
+    }
+  }
+}
