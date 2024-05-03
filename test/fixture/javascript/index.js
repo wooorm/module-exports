@@ -320,3 +320,13 @@ export const someObject = {
 
   undocumented: 1
 }
+
+/**
+ * Lorem.
+ *
+ * @returns
+ *   Ipsum.
+ */
+export default function defaultExport() {
+  return 1
+}

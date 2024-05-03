@@ -151,6 +151,18 @@ Arrow expression.
 
 `undefined`.
 
+### `defaultExport() (default)`
+
+Lorem.
+
+###### Parameters
+
+There are no parameters.
+
+###### Returns
+
+Ipsum (`number`).
+
 ### `delayed(value)`
 
 Create a delayed uppercaser.
