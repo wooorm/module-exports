@@ -41,6 +41,7 @@
     "pluralize": "^8.0.0",
     "prettier": "^3.0.0",
     "typescript": "^5.0.0",
+    "unist-util-remove-position": "^5.0.0",
     "vfile-message": "^4.0.0",
     "vfile-sort": "^4.0.0"
   },
