@@ -208,19 +208,18 @@ test('source', async function (t) {
     const url = new URL('fixture/typescript/export.ts', import.meta.url)
     const result = await finder(url)
     assert.deepEqual(result.messages.map(String), [
-      // To do: this is wrong, it points to the wrong file.
-      '5:4-16:329: Unexpected missing description for interface',
       '6:8-6:18: Unexpected namespace export (`* as x`), use explicit exports',
       '7:1-7:26: Unexpected export all (`*`), use explicit exports',
-      '15:8-15:22: Unexpected default export, use named exports',
-      '16:42-16:47: Unexpected computed name of property, expected static name',
-      '16:94-16:99: Unexpected computed name of property, expected static name',
-      '16:135-16:154: Unexpected missing description for return value of function or call',
-      '16:191-16:210: Unexpected computed name of method, expected static name',
-      '16:1718-16:1733: Unexpected missing description for property `special`',
-      '16:1736-16:1753: Unexpected missing description for function or call',
-      '16:1736-16:1753: Unexpected missing description for return value of function or call',
-      '16:1737-16:1746: Unexpected missing `@param` annotation for parameter `a`'
+      '8:14-8:27: Unexpected missing description for function or call',
+      '8:14-8:27: Unexpected missing description for property `special`',
+      '8:14-8:27: Unexpected missing description for return value of function or call',
+      '8:14-8:27: Unexpected missing `@param` annotation for parameter `a`',
+      '8:29-8:37: Unexpected computed name of method, expected static name',
+      '8:29-8:37: Unexpected computed name of property, expected static name',
+      '8:29-8:37: Unexpected computed name of property, expected static name',
+      '8:29-8:37: Unexpected missing description for interface',
+      '8:29-8:37: Unexpected missing description for return value of function or call',
+      '15:8-15:22: Unexpected default export, use named exports'
     ])
     const actual = serialize(await defaultFormat(result.symbols))
     const expected = await snapshot('typescript-export', actual)

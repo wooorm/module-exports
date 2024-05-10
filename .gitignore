@@ -7,4 +7,5 @@ node_modules/
 yarn.lock
 
 !/index.d.ts
+!/lib/types.d.ts
 !/test/fixture/manual/index.d.ts
