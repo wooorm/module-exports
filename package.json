@@ -37,6 +37,7 @@
     "estree-util-is-identifier-name": "^3.0.0",
     "mdast-util-from-markdown": "^2.0.0",
     "mdast-util-gfm": "^3.0.0",
+    "mdast-util-to-markdown": "^2.0.0",
     "micromark-extension-gfm": "^3.0.0",
     "micromark-util-character": "^2.0.0",
     "pluralize": "^8.0.0",

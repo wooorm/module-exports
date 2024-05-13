@@ -44,6 +44,32 @@ Value (`number`).
 
 `number`.
 
+### `SomeDocumentedTuple`
+
+Lorem ipsum dolor sit amet (`[name: number]`).
+See , that, and RenamedClass.
+Also, check out [Google](http://www.google.com) and
+[GitHub](https://github.com).
+
+Apparently there’s also [`https://example.com`](https://example.com)
+and <https://example.com>.
+
+What if you do {@unknown} or {@unknown unknown}?
+
+Or other things,
+such as [Label](mailto:user@example.com).
+
+And some label?
+
+What about regular markdown?
+To a URL: [Google](http://www.google.com),
+to a symbol as a resource link: [RenamedClass](RenamedClass),
+and to a symbol as reference links: \[RenamedClass]\[RenamedClass],
+\[RenamedClass]\[], \[RenamedClass].
+
+And what about `RenamedClass`,
+or `RenamedClass`?
+
 ### `SomeFunction`
 
 Comment at.

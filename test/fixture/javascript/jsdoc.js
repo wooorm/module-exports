@@ -83,3 +83,31 @@
  * @property {string | null | undefined} [nullish]
  *   Kilo.
  */
+
+/**
+ * Lorem ipsum dolor sit amet.
+ * See {@link}, {@link that}, and {@link RenamedClass}.
+ * Also, check out {@link http://www.google.com | Google} and
+ * {@link https://github.com GitHub}.
+ *
+ * Apparently there’s also {@linkcode https://example.com}
+ * and {@linkplain https://example.com}.
+ *
+ * What if you do {@unknown} or {@unknown unknown}?
+ *
+ * Or other things,
+ * such as {@link mailto:user@example.com Label}.
+ *
+ * And {@link RenamedClass#value | some label}?
+ *
+ * What about regular markdown?
+ * To a URL: [Google](http://www.google.com),
+ * to a symbol as a resource link: [RenamedClass](RenamedClass),
+ * and to a symbol as reference links: [RenamedClass][RenamedClass],
+ * [RenamedClass][], [RenamedClass].
+ *
+ * And what about {@link RenamedClass `RenamedClass`},
+ * or `{@link RenamedClass}`?
+ *
+ * @typedef {[name: number]} SomeDocumentedTuple
+ */
