@@ -106,19 +106,19 @@ test('source', async function (t) {
         '139:3-139:15: Unexpected computed name of property, expected static name',
         '146:3-148:4: Unexpected static block, use static properties',
         '194:3-194:19: Unexpected computed name of method, expected static name',
-        '221:3-223:4: Unexpected missing description for function or call',
-        '221:3-223:4: Unexpected missing description for return value of function or call',
-        '232:1-244:2: Unexpected missing description on class `Example`',
-        '233:3-235:4: Unexpected missing description on get accessor `a`',
-        '237:3-237:18: Unexpected missing description on set accessor `a`',
-        '239:3-241:4: Unexpected missing description for function or call',
-        '239:3-241:4: Unexpected missing description for return value of function or call',
-        '243:3-243:21: Unexpected missing description for property `undocumented`',
-        '266:14-266:36: Unexpected missing description for variable `implicitType`',
-        '283:3-283:19: Unexpected computed name of property, expected static name',
-        '303:3-303:17: Unexpected spread, use explicit exports',
-        '319:3-319:24: Unexpected missing description for property `undocumentedShorthand`',
-        '321:3-321:18: Unexpected missing description for property `undocumented`'
+        '224:3-226:4: Unexpected missing description for function or call',
+        '224:3-226:4: Unexpected missing description for return value of function or call',
+        '235:1-247:2: Unexpected missing description on class `Example`',
+        '236:3-238:4: Unexpected missing description on get accessor `a`',
+        '240:3-240:18: Unexpected missing description on set accessor `a`',
+        '242:3-244:4: Unexpected missing description for function or call',
+        '242:3-244:4: Unexpected missing description for return value of function or call',
+        '246:3-246:21: Unexpected missing description for property `undocumented`',
+        '269:14-269:36: Unexpected missing description for variable `implicitType`',
+        '286:3-286:19: Unexpected computed name of property, expected static name',
+        '306:3-306:17: Unexpected spread, use explicit exports',
+        '322:3-322:24: Unexpected missing description for property `undocumentedShorthand`',
+        '324:3-324:18: Unexpected missing description for property `undocumented`'
       ])
       const actual = serialize(await defaultFormat(result.symbols))
       const expected = await snapshot('javascript-index', actual)

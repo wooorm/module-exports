@@ -85,6 +85,13 @@ Self (`Sum`).
 
 General description hotel (`string`).
 
+###### Examples
+
+```ts
+const sum = new Sum(1, 2)
+console.log(sum.c) // 'c'
+```
+
 ### `Sum#d()`
 
 ###### Parameters
@@ -175,6 +182,16 @@ Create a delayed uppercaser.
 ###### Returns
 
 Async uppercase (`Promise<string>`).
+
+### `exemplary`
+
+Exemplary value (`1`).
+
+###### Examples
+
+```ts
+console.log(exemplary) // 1
+```
 
 ### `explicitParametersAndReturn(a, b)`
 

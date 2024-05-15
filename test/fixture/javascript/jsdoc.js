@@ -111,3 +111,31 @@
  *
  * @typedef {[name: number]} SomeDocumentedTuple
  */
+
+/**
+ * Lorem ipsum dolor sit amet.
+ *
+ * @example
+ *   // Before.
+ *   console.log('Hello, Mars!')
+ * @typedef {[name: number]} SomeExemplaryTuple
+ *   Tuple.
+ * @example
+ *   // After.
+ *   console.log(3 + 4) // 7
+ */
+
+/**
+ * Lorem ipsum dolor sit amet.
+ *
+ * @example
+ *   // Before.
+ *   console.log('Hello, Venus!')
+ * @typedef SomeExemplaryType
+ *   Type.
+ * @property {string} field
+ *   The field.
+ * @example
+ *   // After.
+ *   console.log(2 + 3) // 5
+ */

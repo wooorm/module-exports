@@ -55,6 +55,10 @@ export interface Value {
    */
   description: Root | undefined
   /**
+   * Symbol examples.
+   */
+  examples: Array<string>
+  /**
    * Things this inherits from.
    */
   heritage: Array<Value>

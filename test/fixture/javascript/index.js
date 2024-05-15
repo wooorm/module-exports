@@ -198,6 +198,9 @@ export class Sum {
   /**
    * General description hotel.
    *
+   * @example
+   *   const sum = new Sum(1, 2)
+   *   console.log(sum.c) // 'c'
    * @returns {string}
    *   Just `c`.
    */
@@ -330,3 +333,11 @@ export const someObject = {
 export default function defaultExport() {
   return 1
 }
+
+/**
+ * Exemplary value.
+ *
+ * @example
+ *   console.log(exemplary) // 1
+ */
+export const exemplary = 1

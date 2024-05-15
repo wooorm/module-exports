@@ -70,6 +70,33 @@ and to a symbol as reference links: \[RenamedClass]\[RenamedClass],
 And what about `RenamedClass`,
 or `RenamedClass`?
 
+### `SomeExemplaryTuple`
+
+Tuple (`[name: number]`).
+
+###### Examples
+
+```ts
+// Before.
+console.log('Hello, Mars!')
+```
+
+### `SomeExemplaryType`
+
+Type.
+
+###### Fields
+
+* `field` (`string`)
+  — the field
+
+###### Examples
+
+```ts
+// Before.
+console.log('Hello, Venus!')
+```
+
 ### `SomeFunction`
 
 Comment at.
