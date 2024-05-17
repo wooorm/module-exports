@@ -259,6 +259,7 @@ test('source', async function (t) {
     assert.deepEqual(result.messages.map(String), [])
   })
 })
+
 /**
  * @param {string} name
  * @param {string} actual
@@ -270,6 +271,7 @@ async function snapshot(name, actual) {
 
   try {
     expected = await fs.readFile(expectedUrl, 'utf8')
+    expected = expected.replace(/\r\n/g, '\n')
   } catch {}
 
   if (actual !== expected) {
