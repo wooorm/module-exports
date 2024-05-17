@@ -1,6 +1,6 @@
 {
   "name": "module-exports",
-  "version": "2.1.1",
+  "version": "2.2.0",
   "description": "Get the exports of a module",
   "license": "MIT",
   "keywords": [
