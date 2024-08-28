@@ -62,9 +62,45 @@ There are no parameters.
 
 `SomeName`.
 
-### `NamedClassExpression#somePropertyOnNamedClass`
+### `NamedClassExpression#someArray`
 
-Field on named class (`0`).
+Array (`Array<string>`).
+
+### `NamedClassExpression#someBigInt`
+
+Bint (`1n`).
+
+### `NamedClassExpression#someFalse`
+
+False (`false`).
+
+### `NamedClassExpression#someNull`
+
+Null (`null`).
+
+### `NamedClassExpression#someNumber`
+
+Number (`0`).
+
+### `NamedClassExpression#someObject`
+
+Object.
+
+###### Fields
+
+* `a` (`number`)
+
+### `NamedClassExpression#someString`
+
+String (`'a'`).
+
+### `NamedClassExpression#someTrue`
+
+True (`true`).
+
+### `NamedClassExpression#undefined`
+
+Undefined (`undefined`).
 
 ### `new Sum(a, b)`
 

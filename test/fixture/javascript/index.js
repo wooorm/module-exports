@@ -99,9 +99,41 @@ export const anonymousFunctionExpression = function (_) {
  */
 export const NamedClassExpression = class SomeName {
   /**
-   * Field on named class.
+   * Array.
    */
-  somePropertyOnNamedClass = 0
+  someArray = ['a', 'b']
+  /**
+   * Bint.
+   */
+  someBigInt = 1n
+  /**
+   * False.
+   */
+  someFalse = false
+  /**
+   * Null.
+   */
+  someNull = /** @type {null} */ (null)
+  /**
+   * Number.
+   */
+  someNumber = 0
+  /**
+   * Object.
+   */
+  someObject = {a: 1}
+  /**
+   * String.
+   */
+  someString = 'a'
+  /**
+   * True.
+   */
+  someTrue = true
+  /**
+   * Undefined.
+   */
+  undefined = /** @type {undefined} */ (undefined)
 }
 
 /**
