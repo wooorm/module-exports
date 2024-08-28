@@ -1,4 +1,4 @@
-/* eslint-disable @typescript-eslint/parameter-properties, @typescript-eslint/restrict-plus-operands, @typescript-eslint/no-inferrable-types, @typescript-eslint/no-namespace, @typescript-eslint/no-unsafe-return */
+/* eslint-disable @typescript-eslint/no-unnecessary-parameter-property-assignment, @typescript-eslint/parameter-properties, @typescript-eslint/restrict-plus-operands, @typescript-eslint/no-inferrable-types, @typescript-eslint/no-namespace, @typescript-eslint/no-unsafe-return */
 
 /**
  * General description alpha.

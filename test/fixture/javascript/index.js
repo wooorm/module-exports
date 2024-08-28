@@ -162,14 +162,11 @@ export class Sum {
    * General description bravo.
    */
   #privateProperty = 0
-
   /**
    * General description charlie.
    */
   publicProperty = 0;
-
   ['computed'] = 1
-
   /**
    * General description delta.
    */
